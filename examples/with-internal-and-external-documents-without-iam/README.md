@@ -1,4 +1,4 @@
-# Disabled example
+# with-internal-and-external-documents-without-iam example
 
 ## Usage
 
@@ -16,7 +16,10 @@
 
 ## Providers
 
-No provider.
+| Name | Version |
+|------|---------|
+| aws | ~> 2.28 |
+| random | n/a |
 
 ## Inputs
 

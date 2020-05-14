@@ -11,11 +11,24 @@ provider "aws" {
 }
 
 #####
+# Context
+#####
+
+data "aws_ssm_document" "this" {
+  name            = "AWS-ApplyChefRecipes"
+  document_format = "JSON"
+}
+
+#####
 # Module
 #####
 
 module "this" {
   source = "../../"
 
-  enabled = false
+  additional_ssm_document_arns = [
+    data.aws_ssm_document.this.arn
+  ]
+
+  iam_policy_enabled = false
 }

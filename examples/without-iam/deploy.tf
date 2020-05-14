@@ -17,5 +17,5 @@ provider "aws" {
 module "this" {
   source = "../../"
 
-  enabled = false
+  iam_policy_enabled = false
 }

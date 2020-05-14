@@ -1,4 +1,4 @@
-# Disabled example
+# without-iam example
 
 ## Usage
 
