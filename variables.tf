@@ -97,7 +97,7 @@ list(
 ```
 EOY
   default     = []
-  type        = list
+  type        = list(any)
 }
 
 variable "ssm_document_tags" {
